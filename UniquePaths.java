@@ -1,5 +1,6 @@
 public class UniquePaths{
   public int uniquePaths(int m, int n) {
+        //动态规划
         int[][] res=new int[m][n];
         for(int i=0;i<m;i++){
             res[i][0]=1;
@@ -13,7 +14,7 @@ public class UniquePaths{
             }
         }
         return res[m-1][n-1];
-        /**second solution
+        /**second solution 
         int[] res=new int[n];
         for(int i=0;i<n;i++)
             res[i]=1;
