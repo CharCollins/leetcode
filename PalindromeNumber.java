@@ -8,7 +8,7 @@ public class PalindromeNumber {
             result=result*10+m;
         }
         return x==result;
-        /**
+        /**second solution
         if(x<0) return false;
         int div=1;
         while(x/div>=10) div*=10;
