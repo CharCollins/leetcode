@@ -5,5 +5,16 @@ public class LengthofLastWord {
             return arr[arr.length-1].length();
         }
         return 0;
+        /**
+        char[] arr=s.toCharArray();
+        if(arr.length==0) return 0;
+        int l=arr.length-1;
+        while(l>=0&&arr[l]==' ') l--;//l>=0控制下标不越界
+        int count=0;
+        while(l>=0&&arr[l]!=' '){
+            l--;count++;
+        }
+        return count;
+        */
     }
 }
